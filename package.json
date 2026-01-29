@@ -1,0 +1,9 @@
+{
+  "name": "mssql-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.0",
+    "mssql": "^10.0.0"
+  }
+}

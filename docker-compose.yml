@@ -1,0 +1,19 @@
+version: "3.9"
+
+networks:
+  qa-mcp-net:
+    external: true
+
+services:
+  mssql-mcp:
+    build: .
+    container_name: mssql-mcp
+    environment:
+      MSSQL_HOST: your-sql-host
+      MSSQL_USER: your-user
+      MSSQL_PASSWORD: your-password
+      MSSQL_DATABASE: your-db
+    ports:
+      - "3001:3001"
+    networks:
+      - qa-mcp-net
