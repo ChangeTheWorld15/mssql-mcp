@@ -9,10 +9,10 @@ services:
     build: .
     container_name: mssql-mcp
     environment:
-      MSSQL_HOST: your-sql-host
-      MSSQL_USER: your-user
-      MSSQL_PASSWORD: your-password
-      MSSQL_DATABASE: your-db
+      MSSQL_HOST: NJETLBSSQLSRV01.ETAGLABS.COM
+      MSSQL_USER: svc_mcpqa
+      MSSQL_PASSWORD: tnj!zby8VAY6cvj3twk
+      MSSQL_DATABASE: FuseQA
     ports:
       - "3001:3001"
     networks:
